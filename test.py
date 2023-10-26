@@ -1,5 +1,5 @@
-#import Geometry
+import Geometry
+import Paradoxes
 
-from Geometry import *
-
-print(dir())
+#print(Geometry.sq_sq(5))
+print(Paradoxes.monty_hall(10_000))
