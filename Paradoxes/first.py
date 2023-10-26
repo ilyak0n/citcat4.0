@@ -20,7 +20,7 @@ def monty_hall(n):
         elif a.index(a[win - 1]) != a.index(a[player - 1]):
             win2 += 1
             games += 1
-    return f"{win1 / games}, {win2 / games}"
+    return f"{win1/games}%, {win2/games}%"
 
 def main():
     print(monty_hall(10_000))
