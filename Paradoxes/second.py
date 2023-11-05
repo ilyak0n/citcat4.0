@@ -9,7 +9,7 @@ def bdays(n,k):
         mn = set(m)
         if len(mn) < len(m):
             count += 1
-    return count/n
+    return f"Проент совпадения дней рождения в {k} группах из {n} сучаев: {count/n}%"
 
 def main():
     print(bdays(1000,23))
