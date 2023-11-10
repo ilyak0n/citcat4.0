@@ -44,7 +44,7 @@ def get_start():
                 print("Вы отгадали слово!\n")
                 record += 1
 
-            elif letter.upper() != word and len(letter) == len(word):
+            elif letter.upper() != word and len(letter) != 1:
                 lives = 0
                 print(f"Вы назвали неправильное слово и проиграли. Загаданным словом было: {word}")
 
@@ -59,7 +59,7 @@ def get_start():
                 print("Введено некорреектно")
                 continue
 
-        if record == gen.get_records((record)):
+        if record > gen.get_records((record)):
             print("\nПоздравляем! Вы установили новый рекорд")
             print(f"Вы набрали: {record} очков.\nРекорд: {gen.get_records(record)}\n")
 
