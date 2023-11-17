@@ -3,11 +3,11 @@ def read_file(path):
     file = open(path, encoding="utf8").read()
     file_list = file.lower().split()
     for i in range(len(file_list)):
-        if "." or "," or "!" or "?" in file_list[i]:
-            file_list[i] = file_list[i].replace(".","").replace(",","").replace("!","").replace("?","")
+        if file_list[i].isalpha():
             file_mn.add(file_list[i])
         else:
-            file_mn.add(file_list[i])
+            new_s = ''.join([s for s in file_list[i] if s.isalpha()])
+            file_mn.add(new_s)
     file_words = list(file_mn)
     return file_words
 
