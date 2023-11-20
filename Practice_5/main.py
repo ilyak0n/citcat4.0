@@ -8,6 +8,9 @@ try:
 except FileNotFoundError:
     print("Введите правильное название файла!")
 
+except ValueError:
+    print("Проверьте символы в файле!")
+
 except:
     print("Произошла непредвиденная ошибка")
 
