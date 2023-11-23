@@ -28,6 +28,10 @@ def get_totals():
 
     return new_arr
 
-gets = input()
-print(get_books(gets))
-print(get_totals())
+while True:
+    gets = input("Введите слово, с которым хотите найти книгу: ")
+    if gets.isalpha():
+        print(get_books(gets))
+        print(get_totals())
+    else:
+        print("Попробуйте снова\n")
