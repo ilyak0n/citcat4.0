@@ -29,7 +29,7 @@ def get_totals():
     return new_arr
 
 while True:
-    gets = input("Введите слово, с которым хотите найти книгу: ")
+    gets = input("Введите слово: ")
     if gets.isalpha():
         print(get_books(gets))
         print(get_totals())
