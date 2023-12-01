@@ -11,6 +11,9 @@ except FileNotFoundError:
 except ValueError:
     print("Проверьте символы в файле!")
 
+except OSError:
+    print("Ошибка операционной системы")
+
 except:
     print("Произошла непредвиденная ошибка")
 
